@@ -2,9 +2,154 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Barry's Resume</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/index.css" />
 </head>
 <body>
-	<h1>hello world</h1>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Barry</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">个人简介<span class="sr-only">(current)</span></a></li>
+					<li><a href="#">专业技能</a></li>
+					<li><a href="#">工作经历</a></li>
+					<li><a href="#">项目经验</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">One more separated link</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section id="part_intro">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<a href=""></a>
+					<a href=""></a>
+					<img id="myPhoto" src="./images/gakki.png" class="img-circle" />
+					<a href=""></a>
+					<a href=""></a>
+				</div>
+			</div>
+			<div class="row" id="intro_content">
+				<div class="col-lg-4 col-lg-offset-1">
+					<ul>
+						<li>姓名 | Barry</li>
+						<li>手机 | 15989105098</li>
+						<li>邮箱 | 415400755@qq.com</li>
+						<li>QQ | 415400755</li>
+						<li>毕业学校 | 广东工业大学</li>
+						<li>现居地 | 广东 - 广州</li>
+						<li>Blog | <a href="http://gonyulian415.iteye.com/">点击进入</a></li>
+						<li>Github | <a href="">点击进入</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-5 col-lg-offset-1">
+					<ul>
+						<li>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+		</div> 
+	</section>
+	<section id="part_skills">
+		<div class="container">
+			<div id="skill_title" class="row">
+				<div class="col-lg-12 text-center">
+					<h1>专业技能</h1>
+				</div>
+			</div>
+			<div id="skill_content" class="row">
+				<div class="col-lg-3">
+					<ul>
+						<li>语言</li>
+						<li>HTML5</li>
+						<li>CSS3</li>
+						<li>Javascript</li>
+						<li>Java</li>
+						<li>Php</li>
+					</ul>
+				</div>
+				<div class="col-lg-3">
+					<ul>
+						<li>思想</li>
+						<li>面向对象</li>
+						<li>W3C标准</li>
+						<li>语义化</li>
+						<li>MVC/MVP/MVVM</li>
+						<li>响应式设计</li>
+					</ul>
+				</div>
+				<div class="col-lg-3">
+					<ul>
+						<li>框架</li>
+						<li>Bootstrap</li>
+						<li>VueJs</li>
+						<li>SSH</li>
+						<li>Thinkphp</li>
+						<li>Xutils</li>
+					</ul>
+				</div>
+				<div class="col-lg-3">
+					<ul>
+						<li>工具</li>
+						<li>Webstorm</li>
+						<li>Sublime</li>
+						<li>NodeJs</li>
+						<li>Git</li>
+						<li>Grunt</li>
+						<li>MyEclipse</li>
+						<li>Android Studio</li>
+						<li>Photoshop</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="part_experi">
+		<div class="container">
+			<div id="experi_title" class="row">
+				<div class="col-lg-12 text-center">
+					<h1>工作经历</h1>
+				</div>
+			</div>
+			<div id="experi_content" class="row">
+				<div class="col-lg-12">
+					<div id="time"></div>
+					<div id="time_line"><img src="./images/timeline.png" /></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
