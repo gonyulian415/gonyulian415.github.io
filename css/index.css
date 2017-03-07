@@ -1,0 +1,63 @@
+ul{
+	margin: 0;
+	padding: 0;
+}
+ul li{
+	list-style-type:none;
+	margin: 0px;
+}
+#part_intro{
+	background-color: #22B573;
+	font-size: 18px;
+    color: white;
+    padding-top: 115px;
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+#part_intro li{
+	height: 30px;
+}
+#part_intro #intro_content{
+	padding-top: 50px;
+}
+#myPhoto{
+	height: 270px;
+	width: 385px;
+}
+#part_skills{
+	background-color: #1889C5;
+	font-size: 18px;
+    color: white;
+    padding-top: 65px;
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+#part_skills #skill_content{
+	padding-top: 50px;
+}
+#part_skills ul{
+	width: 210px;
+	border: 2px solid #FFFFFF;
+    font-size: 20px;
+    font-family: "Microsoft YaHei light";
+    text-align: center;
+    height: auto;
+}
+#part_skills ul li:first-child{
+	background-color: white;
+	color: #333;
+	font-weight: bold;
+}
+#part_skills ul li{
+	height: 36px;
+	line-height: 36px;
+}
+#part_skills ul li:hover{
+	height: 36px;
+	line-height: 36px;
+	background-color: white;
+	color: #333;
+}
+#part_experi{
+	background-color: #9C58B6;
+}
