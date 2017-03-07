@@ -5,6 +5,7 @@
 	<title>Barry's Resume</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/onepage-scroll.css"/>
 	<link rel="stylesheet" href="css/index.css" />
 </head>
 <body>
@@ -21,10 +22,10 @@
 			</div>
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">个人简介<span class="sr-only">(current)</span></a></li>
-					<li><a href="#">专业技能</a></li>
-					<li><a href="#">工作经历</a></li>
-					<li><a href="#">项目经验</a></li>
+					<li><a href="javascript:void(0);" onclick="Go(1);">个人简介<span class="sr-only">(current)</span></a></li>
+					<li><a href="javascript:void(0);" onclick="Go(2);">专业技能</a></li>
+					<li><a href="javascript:void(0);" onclick="Go(3);">工作经历</a></li>
+					<li><a href="javascript:void(0);" onclick="Go(4);">项目经验</a></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
 						<ul class="dropdown-menu">
@@ -41,115 +42,183 @@
 			</div>
 		</div>
 	</nav>
-	<section id="part_intro">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 text-center">
-					<a href=""></a>
-					<a href=""></a>
-					<img id="myPhoto" src="./images/gakki.png" class="img-circle" />
-					<a href=""></a>
-					<a href=""></a>
+	<div class="main">
+		<section id="part_intro" class="page page1">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 text-center">
+						<a href=""></a>
+						<a href=""></a>
+						<img id="myPhoto" src="./images/gakki.png" class="img-circle" />
+						<a href=""></a>
+						<a href=""></a>
+					</div>
+				</div>
+				<div class="row" id="intro_content">
+					<div class="col-md-4 col-sm-12">
+						<ul>
+							<li>姓名 | Barry</li>
+							<li>手机 | 15989105098</li>
+							<li>邮箱 | 415400755@qq.com</li>
+							<li>QQ | 415400755</li>
+							<li>毕业学校 | 广东工业大学</li>
+							<li>现居地 | 广东 - 广州</li>
+							<li>Blog | <a href="http://gonyulian415.iteye.com/">点击进入</a></li>
+							<li>Github | <a href="">点击进入</a></li>
+						</ul>
+					</div>
+					<div class="col-md-8 col-sm-12">
+						<ul>
+							<li>我是一个好奇心强烈，风趣幽默，做事认真的人。</li>
+							<li>我有明确的时间概念，能在规定的时间内完成工作任务。</li>
+							<li>我自学能力不错，业余时间会去关注最新的技术并且尝试使用。</li>
+							<br />
+							<li>两年的前端开发经验，熟练掌握HTML,CSS,Javascript，JQuery，Ajax等前端开发技术。</li>
+							<li>后端语言熟悉Java，有团队开发过基于ssh的黄埔体育场管理系统。</li>
+							<li>移动端开发过懒埋天气（Android）。</li>
+							<li>框架方面，前端框架熟练使用Bootstrap和Vuejs。</li>
+							<li>构建工具方面，熟悉Grunt和Webpack。</li>
+						</ul>
+					</div>
+				</div>
+			</div> 
+		</section>
+		<section id="part_skills" class="page page2">
+			<div class="container">
+				<div id="skill_title" class="row">
+					<div class="col-md-12 text-center">
+						<h1>专业技能</h1>
+					</div>
+				</div>
+				<div id="skill_content" class="row">
+					<div class="col-md-3 col-sm-12">
+						<ul>
+							<li>语言</li>
+							<li>HTML5</li>
+							<li>CSS3</li>
+							<li>Javascript</li>
+							<li>Java</li>
+							<li>Php</li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<ul>
+							<li>思想</li>
+							<li>面向对象</li>
+							<li>W3C标准</li>
+							<li>语义化</li>
+							<li>MVC/MVP/MVVM</li>
+							<li>响应式设计</li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<ul>
+							<li>框架</li>
+							<li>Bootstrap</li>
+							<li>VueJs</li>
+							<li>SSH</li>
+							<li>Thinkphp</li>
+							<li>Xutils</li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<ul>
+							<li>工具</li>
+							<li>Webstorm</li>
+							<li>Sublime</li>
+							<li>NodeJs</li>
+							<li>Git</li>
+							<li>Grunt</li>
+							<li>MyEclipse</li>
+							<li>Android Studio</li>
+							<li>Photoshop</li>
+						</ul>
+					</div>
 				</div>
 			</div>
-			<div class="row" id="intro_content">
-				<div class="col-lg-4 col-lg-offset-1">
-					<ul>
-						<li>姓名 | Barry</li>
-						<li>手机 | 15989105098</li>
-						<li>邮箱 | 415400755@qq.com</li>
-						<li>QQ | 415400755</li>
-						<li>毕业学校 | 广东工业大学</li>
-						<li>现居地 | 广东 - 广州</li>
-						<li>Blog | <a href="http://gonyulian415.iteye.com/">点击进入</a></li>
-						<li>Github | <a href="">点击进入</a></li>
-					</ul>
+		</section>
+		<section id="part_experi" class="page page3">
+			<div class="container">
+				<div id="experi_title" class="row">
+					<div class="col-md-12 text-center">
+						<h1>工作经历</h1>
+					</div>
 				</div>
-				<div class="col-lg-5 col-lg-offset-1">
-					<ul>
-						<li>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
-				</div>
-			</div>
-		</div> 
-	</section>
-	<section id="part_skills">
-		<div class="container">
-			<div id="skill_title" class="row">
-				<div class="col-lg-12 text-center">
-					<h1>专业技能</h1>
+				<div id="experi_content" class="row">
+					<div class="col-md-12 text-center">
+						<div id="time">
+							<ul>
+								<li>2010.09 - 2014.07</li>
+								<li>2015.06 - Now</li>
+							</ul>
+						</div>
+						<div id="time_line"><img src="./images/timeline.png" /></div>
+						<div id="work">
+							<ul>
+								<li>广东工业大学</li>
+								<li>广州开发区信息工程公司</li>
+							</ul>
+							<div class="more text-left">
+								<p>web开发工程师</p>
+								<p>主要负责广州市开发区各事业单位和管委会网站的前端界面实现与修改</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div id="skill_content" class="row">
-				<div class="col-lg-3">
-					<ul>
-						<li>语言</li>
-						<li>HTML5</li>
-						<li>CSS3</li>
-						<li>Javascript</li>
-						<li>Java</li>
-						<li>Php</li>
-					</ul>
+		</section>
+		<section id="part_project" class="page page4">
+			<div class="container">
+				<div class="row text-center" id="project_title">
+					<div class="col-md-12 text-center">
+						<h1>项目经验</h1>
+					</div>
 				</div>
-				<div class="col-lg-3">
-					<ul>
-						<li>思想</li>
-						<li>面向对象</li>
-						<li>W3C标准</li>
-						<li>语义化</li>
-						<li>MVC/MVP/MVVM</li>
-						<li>响应式设计</li>
-					</ul>
+				<div class="row prj_name">
+					<div class="col-md-3 col-sm-6 text-center">
+						<img src="./images/scjg.jpg" class="img-circle" />
+						<label>广州开发区市场监督管理局</label>
+					</div>
+					<div class="col-md-3 col-sm-6 text-center">
+						<img src="./images/ypgwh.jpg" class="img-circle"/>
+						<label>广州开发区云埔工业区管理委员会</label>
+					</div>
+					<div class="col-md-3 col-sm-6 text-center">
+						<img src="./images/gtgh.jpg" class="img-circle"/>
+						<label>广州开发区国土与资源规划局</label>
+					</div>
+					<div class="col-md-3 col-sm-6 text-center">
+						<img src="./images/jw.jpg" class="img-circle"/>
+						<label>广州开发区纪工委</label>
+					</div>
 				</div>
-				<div class="col-lg-3">
-					<ul>
-						<li>框架</li>
-						<li>Bootstrap</li>
-						<li>VueJs</li>
-						<li>SSH</li>
-						<li>Thinkphp</li>
-						<li>Xutils</li>
-					</ul>
-				</div>
-				<div class="col-lg-3">
-					<ul>
-						<li>工具</li>
-						<li>Webstorm</li>
-						<li>Sublime</li>
-						<li>NodeJs</li>
-						<li>Git</li>
-						<li>Grunt</li>
-						<li>MyEclipse</li>
-						<li>Android Studio</li>
-						<li>Photoshop</li>
-					</ul>
+				<div class="row prj_name">
+					<div class="col-md-3 col-sm-6 text-center">
+						<img src="./images/xqcyy.jpg" class="img-circle"/>
+						<label>广州开发区西区产业园</label>
+					</div>
+					<div class="col-md-3 col-sm-6 text-center">
+						<img src="./images/ssgkc.jpg" class="img-circle"/>
+						<label>中新知识城</label>
+					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-	<section id="part_experi">
-		<div class="container">
-			<div id="experi_title" class="row">
-				<div class="col-lg-12 text-center">
-					<h1>工作经历</h1>
-				</div>
-			</div>
-			<div id="experi_content" class="row">
-				<div class="col-lg-12">
-					<div id="time"></div>
-					<div id="time_line"><img src="./images/timeline.png" /></div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
+		</section>
+	</div>
+	
 	<script src="js/jquery-1.9.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.onepage-scroll.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".main").onepage_scroll({
+				sectionContainer: '.page'
+			});
+		});
+		function Go(n){
+			$(".main").moveTo(n);
+		}
+		
+	</script>
 </body>
 </html>
