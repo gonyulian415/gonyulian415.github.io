@@ -5,8 +5,8 @@
 	<title>Barry's Resume</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/onepage-scroll.css"/>
-	<link rel="stylesheet" href="css/index.css" />
+	<link rel="stylesheet" href="./css/index.css" />
+	<link rel="stylesheet" href="./css/jquery.fullPage.css">
 </head>
 <body>
 	<nav class="navbar navbar-inverse navbar-fixed-top">
@@ -43,7 +43,7 @@
 		</div>
 	</nav>
 	<div class="main">
-		<section id="part_intro" class="page page1">
+		<section id="part_intro" class="page">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 col-sm-12 text-center">
@@ -55,7 +55,7 @@
 					</div>
 				</div>
 				<div class="row" id="intro_content">
-					<div class="col-md-4 col-sm-12">
+					<div class="col-md-3 col-sm-12 col-md-offset-1">
 						<ul>
 							<li>姓名 | Barry</li>
 							<li>手机 | 15989105098</li>
@@ -67,23 +67,27 @@
 							<li>Github | <a href="">点击进入</a></li>
 						</ul>
 					</div>
-					<div class="col-md-8 col-sm-12">
+					<div class="col-md-7 col-sm-12 col-md-offset-1">
 						<ul>
-							<li>我是一个好奇心强烈，风趣幽默，做事认真的人。</li>
-							<li>我有明确的时间概念，能在规定的时间内完成工作任务。</li>
-							<li>我自学能力不错，业余时间会去关注最新的技术并且尝试使用。</li>
+							<li>我是一个好奇心强烈,风趣幽默,做事认真的人.</li>
+							<li>我有明确的时间概念,能在规定的时间内完成工作任务.</li>
+							<li>我自学能力不错,业余时间会去关注最新的技术并且尝试使用.</li>
 							<br />
-							<li>两年的前端开发经验，熟练掌握HTML,CSS,Javascript，JQuery，Ajax等前端开发技术。</li>
-							<li>后端语言熟悉Java，有团队开发过基于ssh的黄埔体育场管理系统。</li>
-							<li>移动端开发过懒埋天气（Android）。</li>
-							<li>框架方面，前端框架熟练使用Bootstrap和Vuejs。</li>
-							<li>构建工具方面，熟悉Grunt和Webpack。</li>
+							<li>两年的前端开发经验,熟练掌握HTML,CSS,Javascript,JQuery,Ajax等前端开发技术.</li>
+							<li>布局方面,熟悉传统CSS+DIV盒子模型,熟悉双飞翼布局,熟悉Flex布局,能组合运用</li>
+							<li>技能解决实际问题.</li>
+							<li>后端语言熟悉Java,团队开发过基于ssh的黄埔体育场管理系统。</li>
+							<li>移动端仿懒人天气开发了懒埋天气(Android).</li>
+							<li>框架方面,前端框架熟练使用Bootstrap和Vuejs.</li>
+							<li>熟悉栅格化布局,能用Bootstrap迅速搭建起web架构;熟悉vue组件化思想以及路由使</li>
+							<li>用.</li>
+							<li>构建工具方面,熟悉Grunt和Webpack.</li>
 						</ul>
 					</div>
 				</div>
 			</div> 
 		</section>
-		<section id="part_skills" class="page page2">
+		<section id="part_skills" class="page">
 			<div class="container">
 				<div id="skill_title" class="row">
 					<div class="col-md-12 text-center">
@@ -137,7 +141,7 @@
 				</div>
 			</div>
 		</section>
-		<section id="part_experi" class="page page3">
+		<section id="part_experi" class="page">
 			<div class="container">
 				<div id="experi_title" class="row">
 					<div class="col-md-12 text-center">
@@ -167,7 +171,7 @@
 				</div>
 			</div>
 		</section>
-		<section id="part_project" class="page page4">
+		<section id="part_project" class="page">
 			<div class="container">
 				<div class="row text-center" id="project_title">
 					<div class="col-md-12 text-center">
@@ -208,16 +212,16 @@
 	
 	<script src="js/jquery-1.9.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.onepage-scroll.min.js"></script>
+	<script src="js/scrolloverflow.min.js"></script>
+	<script src="js/jquery.fullPage.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
-			$(".main").onepage_scroll({
-				sectionContainer: '.page'
+			$(".main").fullpage({
+				sectionSelector:".page",
+				scrollOverflow:true,
+				fixedElements:".navbar"
 			});
 		});
-		function Go(n){
-			$(".main").moveTo(n);
-		}
 		
 	</script>
 </body>
