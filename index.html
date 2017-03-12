@@ -22,11 +22,12 @@
 			</div>
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="javascript:void(0);" onclick="Go(1);">个人简介<span class="sr-only">(current)</span></a></li>
-					<li><a href="javascript:void(0);" onclick="Go(2);">专业技能</a></li>
-					<li><a href="javascript:void(0);" onclick="Go(3);">工作经历</a></li>
-					<li><a href="javascript:void(0);" onclick="Go(4);">项目经验</a></li>
-					<li class="dropdown">
+					<li><a href="#firstPage">个人简介<span class="sr-only">(current)</span></a></li>
+					<li><a href="#secondPage">专业技能</a></li>
+					<li><a href="#thirdPage">工作经历</a></li>
+					<li><a href="#fourthPage">项目经验</a></li>
+					<li><a href="#fifthPage">最后的话</a></li>
+					<!-- <li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li><a href="#">Action</a></li>
@@ -37,7 +38,7 @@
 							<li role="separator" class="divider"></li>
 							<li><a href="#">One more separated link</a></li>
 						</ul>
-					</li>
+					</li> -->
 				</ul>
 			</div>
 		</div>
@@ -49,7 +50,7 @@
 					<div class="col-md-12 col-sm-12 text-center">
 						<a href=""></a>
 						<a href=""></a>
-						<img id="myPhoto" src="./images/gakki.png" class="img-circle" />
+						<img id="myPhoto" src="./images/me.png" class="img-circle" />
 						<a href=""></a>
 						<a href=""></a>
 					</div>
@@ -63,8 +64,8 @@
 							<li>QQ | 415400755</li>
 							<li>毕业学校 | 广东工业大学</li>
 							<li>现居地 | 广东 - 广州</li>
-							<li>Blog | <a href="http://gonyulian415.iteye.com/">点击进入</a></li>
-							<li>Github | <a href="">点击进入</a></li>
+							<li>Blog | <a href="http://gonyulian415.iteye.com/"  target="_blank" title="Welcome to my blog!">点击进入</a></li>
+							<li>Github | <a href="github.com/gonyulian415" target="_blank" title="Give me stars!">点击进入</a></li>
 						</ul>
 					</div>
 					<div class="col-md-7 col-sm-12 col-md-offset-1">
@@ -180,36 +181,58 @@
 				</div>
 				<div class="row prj_name">
 					<div class="col-md-3 col-sm-6 text-center">
-						<img src="./images/scjg.jpg" class="img-circle" />
+						<a href="http://scjg.gdd.gov.cn/" target="_blank"><img src="./images/scjg.jpg" class="img-circle" /></a>
 						<label>广州开发区市场监督管理局</label>
 					</div>
 					<div class="col-md-3 col-sm-6 text-center">
-						<img src="./images/ypgwh.jpg" class="img-circle"/>
+						<a href="http://ypgwh.gdd.gov.cn/" target="_blank"><img src="./images/ypgwh.jpg" class="img-circle"/></a>
 						<label>广州开发区云埔工业区管理委员会</label>
 					</div>
 					<div class="col-md-3 col-sm-6 text-center">
-						<img src="./images/gtgh.jpg" class="img-circle"/>
+						<a href="http://gtgh.gdd.gov.cn" target="_blank"><img src="./images/gtgh.jpg" class="img-circle"/></a>
 						<label>广州开发区国土与资源规划局</label>
 					</div>
 					<div class="col-md-3 col-sm-6 text-center">
-						<img src="./images/jw.jpg" class="img-circle"/>
+						<a href="#" target="_blank" data-toggle="modal" data-target="#myModal">
+							<img src="./images/jw.jpg" class="img-circle"/>
+						</a>
 						<label>广州开发区纪工委</label>
 					</div>
 				</div>
 				<div class="row prj_name">
 					<div class="col-md-3 col-sm-6 text-center">
-						<img src="./images/xqcyy.jpg" class="img-circle"/>
+						<a href="http://xqcyy.gdd.gov.cn" target="_blank"><img src="./images/xqcyy.jpg" class="img-circle"/></a>
 						<label>广州开发区西区产业园</label>
 					</div>
 					<div class="col-md-3 col-sm-6 text-center">
-						<img src="./images/ssgkc.jpg" class="img-circle"/>
+						<a href="http://ssgkc.gdd.gov.cn/" target="_blank"><img src="./images/ssgkc.jpg" class="img-circle"/></a>
 						<label>中新知识城</label>
 					</div>
 				</div>
 			</div>
 		</section>
+		<section id="part_last" class="page">
+			<p>修身敲码齐家治国平天下</p>
+		</section>
 	</div>
 	
+	<!-- Modal -->
+	<div class="modal fade bs-example-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-sm" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title text-center" id="myModalLabel">该网站尚未上线:)</h4>
+	      </div>
+	      <!-- <div class="modal-body">
+	        <h3></h3>
+	      </div> -->
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-primary" data-dismiss="modal">知道了</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 	<script src="js/jquery-1.9.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/scrolloverflow.min.js"></script>
@@ -218,7 +241,9 @@
 		$(document).ready(function() {
 			$(".main").fullpage({
 				sectionSelector:".page",
-				scrollOverflow:true
+				scrollOverflow:true,
+				anchors:['firstPage', 'secondPage', 'thirdPage','fourthPage','fifthPage'],
+				navigation:true
 			});
 		});
 //		fullpage插件

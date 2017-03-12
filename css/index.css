@@ -6,6 +6,10 @@ ul li{
 	list-style-type:none;
 	margin: 0px;
 }
+a,a:hover,a:visited{
+	text-decoration: none;
+	color: white;
+}
 #part_intro{
 	background-color: #22B573;
 	font-size: 18px;
@@ -21,8 +25,12 @@ ul li{
 	padding-bottom: 100px;
 }
 #myPhoto{
-	height: 270px;
-	width: 385px;
+	height: 180px;
+	width: 180px;
+}
+#myPhoto img{
+	width:100%;
+	height: 100%;
 }
 #part_skills{
 	background-color: #1889C5;
@@ -127,4 +135,13 @@ ul li{
 	color: white;
 	font-size: 20px;
 	padding-top: 10px;
+}
+#part_last{
+	background-color: #ED6461;
+}
+#part_last p{
+	text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
 }
